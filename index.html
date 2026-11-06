@@ -1,0 +1,415 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Librería Estudiantil JP</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= MENÚ ================= -->
+
+    <header class="header">
+
+        <nav class="nav">
+
+            <ul class="menu">
+
+                <li><a href="#inicio">Inicio</a></li>
+
+                <li><a href="#nosotros">Nosotros</a></li>
+
+                <li><a href="#servicios">Servicios</a></li>
+
+                <li><a href="#contacto">Contacto</a></li>
+
+            </ul>
+
+            <a href="#contacto" class="cta">
+                Contáctanos
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- ================= INICIO ================= -->
+
+        <section id="inicio" class="hero">
+
+            <div class="hero-content">
+
+                <span class="hero-subtitle">
+                    📚 LIBRERÍA ESTUDIANTIL VIRTUAL
+                </span>
+
+                <h1>
+                    Librería Estudiantil JP
+                </h1>
+
+                <p>
+                    Todo lo que necesitas para estudiar,
+                    aprender y crear.
+                </p>
+
+                <a href="#servicios" class="btn">
+                    Ver productos
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= NOSOTROS ================= -->
+
+        <section id="nosotros" class="section">
+
+            <div class="section-title">
+
+                <span>CONÓCENOS</span>
+
+                <h2>Sobre Nosotros</h2>
+
+            </div>
+
+            <div class="about">
+
+                <div class="about-text">
+
+                    <h3>
+                        Tu librería de confianza
+                    </h3>
+
+                    <p>
+                        En Librería Estudiantil JP ofrecemos
+                        productos escolares y materiales
+                        para estudiantes.
+                    </p>
+
+                    <p>
+                        Nuestro objetivo es brindar productos
+                        de buena calidad y una atención
+                        rápida y amable.
+                    </p>
+
+                    <p>
+                        Aquí encontrarás el código QR
+                        para realizar el pago de tu producto.
+                    </p>
+
+                    <a href="#contacto" class="btn">
+                        Contáctanos
+                    </a>
+
+                </div>
+
+                <div class="about-image">
+
+                    <img
+                        src="QR.png"
+                        alt="Código QR de pago de Librería Estudiantil JP">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SERVICIOS ================= -->
+
+        <section id="servicios" class="section services">
+
+            <div class="section-title">
+
+                <span>LO QUE OFRECEMOS</span>
+
+                <h2>Libros y útiles escolares</h2>
+
+                <p>
+                    Selecciona una categoría para conocer
+                    nuestros productos.
+                </p>
+
+            </div>
+
+            <div class="cards">
+
+                <!-- CATEGORÍA LIBROS -->
+
+                <a href="libros.html" class="card">
+
+                    <div class="card-image">
+
+                        <img
+                            src="libro.png"
+                            alt="Libros">
+
+                        <div class="card-icon">
+                            <i class="fa-solid fa-book"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>Libros</h3>
+
+                        <p>
+                            Encuentra libros educativos,
+                            de lectura y diferentes
+                            materiales de estudio.
+                        </p>
+
+                        <span class="card-link">
+                            Ver libros
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <!-- CATEGORÍA ÚTILES ESCOLARES -->
+
+                <a href="utiles.html" class="card">
+
+                    <div class="card-image">
+
+                        <img
+                            src="utiles.png"
+                            alt="Útiles escolares">
+
+                        <div class="card-icon">
+                            <i class="fa-solid fa-pencil"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>Útiles escolares</h3>
+
+                        <p>
+                            Cuadernos, lápices, colores,
+                            crayones y mucho más.
+                        </p>
+
+                        <span class="card-link">
+                            Ver útiles
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACTO ================= -->
+
+        <section id="contacto" class="section contacto">
+
+            <div class="section-title">
+
+                <span>ESCRÍBENOS</span>
+
+                <h2>Contáctanos</h2>
+
+                <p>
+                    Envíanos tu consulta y te responderemos.
+                </p>
+
+            </div>
+
+            <form
+                id="formulario"
+                action="https://formsubmit.co/manuelyugi47@gmail.com"
+                method="POST">
+
+                <input
+                    type="text"
+                    name="nombre"
+                    placeholder="Tu nombre"
+                    required>
+
+                <input
+                    type="email"
+                    name="correo"
+                    placeholder="Tu correo electrónico"
+                    required>
+
+                <input
+                    type="text"
+                    name="ubicacion"
+                    placeholder="Tu ubicación (zona, barrio o dirección)"
+                    required>
+
+                <select name="metodo_pago" required>
+
+                    <option value="" disabled selected>
+                        Selecciona tu método de pago
+                    </option>
+
+                    <option value="Efectivo">
+                        Pago en efectivo
+                    </option>
+
+                    <option value="QR">
+                        Pago mediante QR
+                    </option>
+
+                </select>
+
+                <input
+                    type="text"
+                    name="producto"
+                    placeholder="Nombre del producto"
+                    required>
+
+                <textarea
+                    name="mensaje"
+                    placeholder="Escribe tu mensaje o cantidad..."
+                    required></textarea>
+
+                <!-- CONFIGURACIÓN DEL CORREO -->
+
+                <input
+                    type="hidden"
+                    name="_subject"
+                    value="Nuevo mensaje - Librería Estudiantil JP">
+
+                <input
+                    type="hidden"
+                    name="_captcha"
+                    value="false">
+
+                <input
+                    type="hidden"
+                    name="_template"
+                    value="table">
+
+                <button
+                    type="submit"
+                    class="btn submit-btn">
+
+                    <span>Enviar mensaje</span>
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= PIE DE PÁGINA ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="footer-logo">
+                📚 Librería Estudiantil JP
+            </div>
+
+            <p>
+                Tu espacio para aprender y crear.
+            </p>
+
+            <div class="social">
+            </div>
+
+            <hr>
+
+            <p>
+                © 2026 Librería Estudiantil JP
+                <br>
+                Santa Cruz - Bolivia
+                <br>
+                69231870
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= VOLVER ARRIBA ================= -->
+
+    <button id="topBtn" title="Volver arriba">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+        </button>
+
+    <!-- GUARDAR SOLICITUD EN MYSQL Y ENVIAR CORREO -->
+
+    <script>
+        const formulario = document.getElementById("formulario");
+
+        formulario.addEventListener("submit", async function(event) {
+            event.preventDefault();
+
+            const boton = formulario.querySelector('button[type="submit"]');
+            boton.disabled = true;
+
+            const datos = {
+                nombre: formulario.nombre.value.trim(),
+                correo: formulario.correo.value.trim(),
+                ubicacion: formulario.ubicacion.value.trim(),
+                metodo_pago: formulario.metodo_pago.value,
+                producto: formulario.producto.value.trim(),
+                mensaje: formulario.mensaje.value.trim()
+            };
+
+            try {
+                const respuesta = await fetch("guardar_solicitud.php", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(datos)
+                });
+
+                const resultado = await respuesta.json();
+
+                if (!respuesta.ok || !resultado.exito) {
+                    throw new Error(resultado.mensaje || "No se pudo guardar la solicitud");
+                }
+
+                alert("¡Solicitud guardada correctamente!");
+
+                HTMLFormElement.prototype.submit.call(formulario);
+
+            } catch (error) {
+                alert("Error: " + error.message);
+                boton.disabled = false;
+            }
+        });
+    </script>
+
+</body>
+
+</html>
